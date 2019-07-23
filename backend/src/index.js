@@ -12,6 +12,12 @@ mongoose.connect('mongodb+srv://root:123@cluster0-rseib.mongodb.net/test?retryWr
 	useNewUrlParser: true,
 })
 
+var todoSchema = new mongoose.Schema({
+	item:String
+});
+
+var Todo = mongoose.model('Todo', todoSchema);
+
 app.use((req, res, next)=> {
 	req.io = io;
 	next();
