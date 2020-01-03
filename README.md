@@ -12,5 +12,5 @@ React.js
 
 # Build With
 
-* ![https://pt-br.reactjs.org/](React) - A JavaScript library to build User Interface
-* ![https://nodejs.org/en/](Node.js) - Node.js is a JavaScript RunTime built on Chrome's V8 JavaScript Engine
+* [React](https://pt-br.reactjs.org/) - A JavaScript library to build User Interface
+* [Node.js](https://nodejs.org/en/) - Node.js is a JavaScript RunTime built on Chrome's V8 JavaScript Engine
