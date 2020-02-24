@@ -13,3 +13,4 @@ backend/.env
 .env
 
 backend/uploads/
+build/
