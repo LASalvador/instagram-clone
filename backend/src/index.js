@@ -1,5 +1,4 @@
-// require('dotenv').config({ path: __dirname + '/../.env' });
-// console.log(process.env.URL_MONGODB+'b');
+require('dotenv').config({ path: __dirname + '/../.env' });
 
 const path = require('path')
 const cors = require('cors');
@@ -10,7 +9,7 @@ const app = express();
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
 
-mongoose.connect('mongodb+srv://root:123@cluster0-rseib.mongodb.net/test?retryWrites=true&w=majority', {
+mongoose.connect(process.env.URL_MONGODB, {
     useNewUrlParser:true,
     useUnifiedTopology: true 
 });
